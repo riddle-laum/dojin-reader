@@ -1,0 +1,15 @@
+{
+  "name": "dojin-reader",
+  "version": "0.0.1",
+  "description": "use electron",
+  "main": "app.cjs",
+  "scripts": {
+    "test": "electron src/app.cjs --debug",
+    "start": "electron src/app.cjs"
+  },
+  "author": "AdmHatena",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^13.1.8"
+  }
+}

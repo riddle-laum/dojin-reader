@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="application.css">
+    <title>dojin-reader</title>
+  </head>
+  <body>
+    <div id="title-bar">
+      <img class="icon" src="images/icon.svg">
+      <span class="bar-strs">
+        <span class="tabs tab-local">LOCAL</span>
+        <span class="tabs tab-online">ONLINE</span>
+        <span class="tabs tab-help">HELP</span>
+      </span>
+      <span class="separator">|</span>
+      <span class="title">Dojin-Reader</span>
+      <img class="minimize" src="images/minimize.svg">
+      <img class="close" src="images/close.svg">
+    </div>
+    <div id="window-area">
+      <webview src="./pages/start.html" preload="./pages/preload.js"></webview>
+    </div>
+    <div id="invisible">
+      <div class="pulldown" style="display:none;"></div>
+    </div>
+    <div id="scripts">
+      <script src="application.js"></script>
+    </div>
+  </body>
+</html>
