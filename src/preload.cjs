@@ -9,6 +9,12 @@ electron.contextBridge.exposeInMainWorld(
     },
     minimize: ()=>{
       electron.ipcRenderer.invoke('electron-app-minimize');
-    }
+    },
+    getLocalDojinList: async ()=>{
+      return await electron.ipcRenderer.invoke('electron-app-getlocaldojinlist');
+    },
+    // localFile: (method, path, data = void 0)=>{
+    //   electron.ipcRenderer.invoke('electron-app-localfile', {method: method, path: path, data: data});
+    // },
   }
 );

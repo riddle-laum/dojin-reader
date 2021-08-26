@@ -22,7 +22,16 @@
       <webview src="./pages/start.html" preload="./pages/preload.js"></webview>
     </div>
     <div id="invisible">
-      <div class="pulldown" style="display:none;"></div>
+      <!-- <div class="pulldown" style="display:none;"></div> -->
+      <div class="pulldown pulldown-local" style="display:none;">
+        <div class="pulldown-tab pulldown-local-root">Root</div>
+      </div>
+      <div class="pulldown pulldown-online" style="display:none;">
+        <div class="pulldown-tab pulldown-online-google">Google</div>
+      </div>
+      <div class="pulldown pulldown-help" style="display:none;">
+        <div class="pulldown-tab pulldown-help-about">about Dojin-Reader</div>
+      </div>
     </div>
     <div id="scripts">
       <script src="application.js"></script>
