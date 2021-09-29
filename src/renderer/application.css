@@ -114,6 +114,10 @@
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.pulldown-tab{
+  -webkit-user-select: none;
+}
+
 #invisible .pulldown-local{
   left: calc(var(--titlebar-height) + 5px);
 }
